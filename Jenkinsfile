@@ -4,16 +4,8 @@ pipeline{
         stage('Build'){
             steps {
                 bat 'npm install'
-            }
-        }
-        stage('env'){
-            steps {
                 bat 'type nul > .env'
                 bat 'echo REACT_APP_SECRET_CODE=medApp> .env'
-            }
-        }
-        stage('run'){
-            steps {
                 bat 'npm run build'
             }
         }
