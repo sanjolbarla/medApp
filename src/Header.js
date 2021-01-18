@@ -8,7 +8,7 @@ import dp from "./images/34217-MLS-Fabian-Ekker-003flin.jpg";
 
 const useStyles = makeStyles(() => ({
     header: {
-        backgroundColor: yellow,
+        backgroundColor: "blue",
         
     },
     menuButton: {
