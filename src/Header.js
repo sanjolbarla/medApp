@@ -55,7 +55,7 @@ export default function Header() {
       return <Toolbar className={toolbar}>
             <Grid container>
                 <Grid item xs={"auto"}>
-                    {logo}
+                    {process.env.REACT_APP_SECRET_CODE}
                 </Grid>
                 <Grid item xs="auto">
                     <div>{patientsButton()}</div>
