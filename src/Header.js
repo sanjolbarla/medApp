@@ -8,7 +8,7 @@ import dp from "./images/34217-MLS-Fabian-Ekker-003flin.jpg";
 
 const useStyles = makeStyles(() => ({
     header: {
-        backgroundColor: "#FFFFFF",
+        backgroundColor: yellow,
         
     },
     menuButton: {
@@ -55,7 +55,7 @@ export default function Header() {
       return <Toolbar className={toolbar}>
             <Grid container>
                 <Grid item xs={"auto"}>
-                    {process.env.REACT_APP_SECRET_CODE}
+                    <h3>{process.env.REACT_APP_SECRET_CODE}</h3>
                 </Grid>
                 <Grid item xs="auto">
                     <div>{patientsButton()}</div>
