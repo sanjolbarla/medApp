@@ -20,8 +20,8 @@ pipeline{
         stage('Docker Build and Deploy'){
             steps {
                 bat 'docker pull httpd'
-                bat 'docker build -t medApp .'
-                bat 'docker run -dit --name my-running-app -p 8081:80 medApp'
+                bat 'docker build -t medapp .'
+                bat 'docker run -dit --name my-running-app -p 8081:80 medapp'
             }
         }
     }
